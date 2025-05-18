@@ -19,9 +19,9 @@ public class drawDomain {
         );
     }
 
-    public static void outputFile(){
+    public static void outputDomain(){
         try {
-            FileWriter writer = new FileWriter("path_points.csv");
+            FileWriter writer = new FileWriter("domain.csv");
             writer.write("angle,pos\n");
 
             for(double i = -35; i < 75; i += 1){
@@ -35,13 +35,13 @@ public class drawDomain {
             }
 
             writer.close();
-            System.out.println("✅ Exported to path_points.csv");
+            System.out.println("✅ Exported to domain.csv");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
-    public static void testPoints(double angle, double height){
+    public static void outputPoints(double angle, double height){
         CollisionOBB.debug = true;
 
         boolean isColliding = s.colliding(
@@ -126,7 +126,7 @@ public class drawDomain {
         s.addAOR(aor);
         s.addOBS(topShaft);
 
-        // outputFile();
-        testPoints(20, 0.1674);
+        // outputDomain();
+        outputPoints(20, 0.1674);
     }
 }
