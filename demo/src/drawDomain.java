@@ -133,7 +133,7 @@ public class drawDomain {
         s.addAOR(aor);
         s.addOBS(topShaft);
 
-        // outputDomain();
-        outputPoints(20, 0.1674);
+        outputDomain();
+        // outputPoints(20, 0.1674);
     }
 }
