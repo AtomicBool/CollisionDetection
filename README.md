@@ -9,24 +9,24 @@
 ## Pics
 
 ### Domain
-<img src="./workspace.png" width="60%" height="auto"/> \
+<img src="./workspace.png" width="60%" height="auto"/> <br>
 - domain for valid workspace genrated by outputDomain() in `./demo/src/drawDomain.java`
 
-<img src="./vertices.png" width="60%" height="auto"/> \
+<img src="./vertices.png" width="60%" height="auto"/> <br>
 - vertices of rectangle in the scene \
     with given angle/height of AOR, genrated by outputPoints() in `./demo/src/drawDomain.java`
 
 ### AOR
-<img src="./measurements/aor.png" width="40%" height="auto"/> \
+<img src="./measurements/aor.png" width="40%" height="auto"/> <br>
 - how to approximate your moving mechanism with boxes
     angles are `local rotation`
 - `center` for `OBB` is from the center of bonded AOR to the center of the rectangle
 
 ### Global Offset
-<img src="./measurements/aor_offset.png" width="35%" height="auto"/>
+<img src="./measurements/aor_offset.png" width="35%" height="auto"/> <br>
 
 ### Obstacle
-<img src="./measurements/obs_offset.png" width="40%" height="auto"/>
+<img src="./measurements/obs_offset.png" width="40%" height="auto"/> <br>
 
 ### Geometry
 X-positive pointing left and it's the degree zero

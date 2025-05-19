@@ -25,8 +25,8 @@ public class drawDomain {
             FileWriter writer = new FileWriter("domain.csv");
             writer.write("angle,pos\n");
 
-            for(double i = -35; i < 75; i += 1){
-                for(double j = 0; j < 0.95; j += 0.01){
+            for(double i = -35; i <= 75; i += 1){
+                for(double j = 0; j <= 0.95; j += 0.01){
                     boolean c = s.colliding(
                             new double[] {Math.toRadians(i)},
                             new Vector2D[] {calculateNetOffsetAOR(j)}
@@ -133,7 +133,7 @@ public class drawDomain {
         s.addAOR(aor);
         s.addOBS(topShaft);
 
-        outputDomain();
-        // outputPoints(20, 0.1674);
+        // outputDomain();
+        outputPoints(48, 0.3);
     }
 }
