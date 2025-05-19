@@ -1,4 +1,5 @@
-package Collision;
+import Collision.CollisionOBB;
+import Collision.Scene;
 
 import Collision.structures.AOR;
 import Collision.structures.OBB;
@@ -76,45 +77,51 @@ public class drawDomain {
         OBB b1 = new OBB(
                 new Vector2D(0.064, 0.006),
                 new Vector2D(0.137, 0.1),
-                Math.toRadians(0)
+                Math.toRadians(0),
+                false
         );
 
         OBB b2 = new OBB(
                 new Vector2D(-0.028, 0.062),
                 new Vector2D(0.06, 0.1),
-                Math.toRadians(45)
+                Math.toRadians(45),
+                false
         );
 
         OBB b3 = new OBB(
                 new Vector2D(-0.081, 0.15),
                 new Vector2D(0.06, 0.1),
-                Math.toRadians(25)
+                Math.toRadians(25),
+                false
         );
 
         OBB b4 = new OBB(
                 new Vector2D(-0.098, 0.245),
                 new Vector2D(0.06, 0.1),
-                Math.toRadians(0)
+                Math.toRadians(0),
+                false
         );
 
         OBB b5 = new OBB(
                 new Vector2D(-0.077, 0.346),
                 new Vector2D(0.06, 0.1),
-                Math.toRadians(-20)
+                Math.toRadians(-20),
+                false
         );
 
         OBB b6 = new OBB(
                 new Vector2D(0.036, 0.408),
                 new Vector2D(0.18, 0.06),
-                Math.toRadians(10)
+                Math.toRadians(10),
+                false
         );
 
         OBB topShaft = new OBB(
-                new Vector2D(0, 0),
+                new Vector2D(-0.070, 0.794 + 0.06),
                 new Vector2D(0.04, 0.1),
-                Math.toRadians(0)
+                Math.toRadians(0),
+                true
         );
-        topShaft.globalOffset = new Vector2D(-0.070, 0.794 + 0.06);
 
         aor.addBox(b1);
         aor.addBox(b2);

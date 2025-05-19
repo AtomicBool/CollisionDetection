@@ -1,0 +1,1 @@
+javadoc -encoding UTF-8 -charset UTF-8 -d ./docs/ -sourcepath ./demo/src -subpackages Collision

@@ -6,8 +6,8 @@ import Collision.structures.Vector2D;
 import java.util.ArrayList;
 
 /**
- * separating axis theorem are copied From
- * https://blog.csdn.net/qq_42978535/article/details/142689947
+ * Collision Detector based on Separating Axis Theorem
+ * from https://blog.csdn.net/qq_42978535/article/details/142689947
  */
 public class CollisionOBB {
     public static boolean debug = false;
@@ -43,7 +43,6 @@ public class CollisionOBB {
 
         return res;
     }
-
 
     static private boolean isSeparatedOnAxis(Vector2D axis, ArrayList<Vector2D> verticesA, ArrayList<Vector2D> verticesB){
         double minA = Vector2D.dotProduct(axis, verticesA.get(0));

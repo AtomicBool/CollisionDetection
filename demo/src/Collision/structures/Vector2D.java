@@ -1,5 +1,8 @@
 package Collision.structures;
 
+/**
+ * Vector2D Utils
+ */
 public class Vector2D {
     public double x, y;
 

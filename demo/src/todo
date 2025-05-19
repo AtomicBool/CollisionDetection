@@ -6,6 +6,4 @@ range: -35deg to 70deg (Radians)
 3. If out of bounds return the current position
 4. Lagrange Interpolate for path generation
 
-
-
 least important Check for if Objects are initialized correctly

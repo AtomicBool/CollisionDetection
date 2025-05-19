@@ -1,8 +1,10 @@
 package Collision.structures;
 
 import java.util.ArrayList;
-import java.util.Vector;
 
+/**
+ * Axis of Rotation
+ */
 public class AOR {
     public ArrayList<OBB> boundingBoxes;
 
@@ -13,6 +15,10 @@ public class AOR {
         this.boundingBoxes = new ArrayList<>();
     }
 
+    /**
+     * Adding {@link OBB} to the AOR
+     * @param box the bounding box object
+     */
     public void addBox(OBB box){
         this.boundingBoxes.add(box);
     }
